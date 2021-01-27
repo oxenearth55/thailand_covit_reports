@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+/* SECTION Card */
+.card{
+  width: 100%;
+  height: 160px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card p, h5{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card .number {
+  font-size: 34px;;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* SECTION Menu */
+.menu{
+  background-color: black;
+  padding: 15px;
+}
+.menu a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+
+/* SECTION Intro */
+.intro-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.253)), to(rgba(0, 0, 0, 0.281))),url(photo/intro.jpg);
+  width: 100%;
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro-image img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.intro-image h4{
+  color:white;
+  background-color:rgba(255, 255, 255, 0.37)
+}
+
+/* SECTION Date */
+.date{
+  background-color:rgba(0, 0, 0, 0.075);
+}
+.date p span{
+  font-size: 24px;
 }

@@ -13,7 +13,7 @@ export const covidSlice = createSlice({
             state.info = action.payload
         },
         setDailyCase: (state, action) => {
-            state.dailyCase = action.payload
+            state.dailyCase = action.payload.reverse()
         }
     }
 })

@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Pagination = () => {
+const Pagination = ({number, pagination, setPagination}) => {
     return (
-        <div>
-            
-        </div>
+            <div className={`number border  ${pagination === number && 'current'}`}
+            onClick={() => setPagination(number-1)} >
+                {number}   
+            </div>
     )
 }
 

@@ -5,7 +5,7 @@ const Intro = () => {
     return (
         <div className="row mx-0 justify-content-center align-items-center intro-image">
       
-            <div className="col-4 ">
+            <div className="col-lg-4">
                 <div className=" text-center">
                 <h4 className="py-4">
                      Thailand Covid Report

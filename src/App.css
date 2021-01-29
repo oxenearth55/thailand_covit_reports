@@ -1,3 +1,10 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+
 /* SECTION Card */
 .card{
   width: 100%;
@@ -71,4 +78,21 @@
 .pagination .current{
   background-color: rgba(100, 148, 237, 0.534);
   color: blue;
+}
+
+/* SECTION Footer */
+.footer{
+  background-color: black;
+  height: 100px;
+  width: 100%;  
+}
+
+.footer p{
+  color: white;
+}
+
+.graph{
+ margin-top: 150px;
+ margin-bottom: 125px;
+
 }

@@ -6,6 +6,8 @@ const Menu = props => {
         <div className="d-flex justify-content-center menu">
             <Link to ='/' >Home</Link>
             <Link to ='/daily'>Daily Case</Link>
+            <Link to ='/compare'>Graph</Link>
+
          
         </div>
     )

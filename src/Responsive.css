@@ -1,0 +1,86 @@
+@media screen and (max-width: 780px) {
+    /* SECTION Intro */
+
+    /* .graph{
+        margin-top: 50px;
+        margin-bottom: 70px;
+      } */
+   
+    .intro-image h4{
+        font-size: 32px;
+    }
+    
+    /* SECTION Date */
+
+    .date p span{
+        font-size: 18px;
+
+    }
+
+    .small-card h5{
+        font-size:18px;
+    }
+
+    .pagination{
+        grid-gap: 10px;
+        grid-template-columns: 45px 35px 35px 35px 35px 35px 35px;
+        
+      }
+
+      .pagination .change{
+          font-size: 12px;
+      }
+    
+    
+    }
+
+
+    @media only screen and (max-device-width: 400px) {
+
+        .intro-image h4{
+            font-size: 24px;
+        }
+        
+        /* SECTION Date */
+    
+        .date p span{
+            /* font-size: 12px; */
+            font-weight: bold;
+    
+        }
+
+     
+        /* SECTION Card */
+
+        .small-card h5{
+            font-size:16px;
+        }
+        
+        /* SECTION Pagination */
+        .pagination{
+            grid-gap: 10px;
+            grid-template-columns: 45px 25px 25px 25px 25px 25px 25px;
+            
+          }
+
+        }
+        
+
+        @media only screen and (min-width: 401px) and (max-width: 576px) {
+
+            .intro-image h4{
+                font-size: 24px;
+            }
+
+            .small-card h5{
+                font-size:18px;
+            }
+
+            /* SECTION Pagination */
+            .pagination{
+                grid-gap: 10px;
+                grid-template-columns: 45px 25px 25px 25px 25px 25px 25px;
+                
+            }
+
+        }

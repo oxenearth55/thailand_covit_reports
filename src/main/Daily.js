@@ -11,7 +11,6 @@ import Pagination from '../Components/Pagination'
 
 const Daily = () => {
     const [pagination, setPagination] = useState(0)
-    const [lastIndex, setLastIndex] = useState()
     const [display, setDisplay] = useState([])
     const [interval, setInterval] = useState(1)
     const dailyCase = useSelector(state => state.covid_info.dailyCase)
@@ -19,7 +18,6 @@ const Daily = () => {
 
     useMemo( () => {
         dispatch(grabAllNewCase())
-
     },[])
 
     useEffect(() => {
@@ -38,18 +36,15 @@ const Daily = () => {
             //NOTE We must have this condition because first rendering, dailyCase.length willbe set to 1
             //So, above condition will be ignored at the begining 
             if(interval === 1){
-                array.push(i)
-          
-            }
-            
+                array.push(i)     
+            }     
         }
         setDisplay(array)
         //NOTE When page was changed, the current will be set to the first index
         setPagination(start-1)
     }
 
-   
-   
+
     return (
         <Fragment>
             <Intro/>
@@ -69,7 +64,7 @@ const Daily = () => {
                         <Pagination number={number} setPagination={setPagination} pagination={pagination+1}/>
                     )}
                     {interval !== null && interval !== Math.ceil((dailyCase.length-1)/5) &&
-                        <div onClick={() => {setInterval(interval+1);} } className='change'>Next</div>
+                        <div onClick={() => {setInterval(interval+1)} } className='change'>Next</div>
                     }
                 </div>
             </div>

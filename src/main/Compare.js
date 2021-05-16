@@ -1,8 +1,7 @@
-import React, {useMemo, useEffect, useState} from 'react'
+import React, { useEffect } from 'react'
 import CanvasJSReact from '../Canva/canvasjs.react';
 import { useSelector, useDispatch } from 'react-redux'
 import { grabAllNewCase } from '../Reducer/covidSlice'
-var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 

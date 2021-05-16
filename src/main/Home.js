@@ -1,9 +1,8 @@
-import React, {useEffect, Fragment} from 'react'
+import React, {useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { grabCovidInfo } from '../Reducer/covidSlice'
 import Card from '../Components/Card'
 import LongCard from '../Components/LongCard'
-import Intro from '../Components/Intro'
 import Date from '../Components/Date'
 
 const Home = () => {
@@ -14,8 +13,6 @@ const Home = () => {
     },[])
    
     return (
-        <Fragment>
-             <Intro/>
              <div className="container">
                  <Date date={covid_Info.UpdateDate}/>
                 <div className="row my-4">
@@ -29,8 +26,6 @@ const Home = () => {
                     <Card topic={'New Hospitalized'} total={covid_Info.NewHospitalized} color='#b36b00'/>
                 </div>
             </div>
-           
-        </Fragment>
     )
 }
 

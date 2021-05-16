@@ -1,9 +1,8 @@
-import React, {useMemo, Fragment, useState, useEffect} from 'react'
+import React, {useMemo, useState, useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { grabAllNewCase } from '../Reducer/covidSlice'
 
 //NOTE Components
-import Intro from '../Components/Intro'
 import Card from '../Components/Card'
 import Date from '../Components/Date'
 import Pagination from '../Components/Pagination'
@@ -46,8 +45,6 @@ const Daily = () => {
 
 
     return (
-        <Fragment>
-            <Intro/>
             <div className="container">
                 <Date date={dailyCase[pagination].Date}/>   
                 <div className="row my-4">
@@ -67,11 +64,7 @@ const Daily = () => {
                         <div onClick={() => {setInterval(interval+1)} } className='change'>Next</div>
                     }
                 </div>
-            </div>
-             
-
-            
-        </Fragment>
+            </div>          
     )
 }
 
